@@ -4,12 +4,14 @@ import PageHeading from "../atoms/PageHeading.vue";
 </script>
 
 <template>
-  <div class="flex items-center justify-center h-14 px-4">
+  <header
+    class="flex items-center justify-center h-14 px-4 backdrop-blur-md sticky top-0 bg-white bg-opacity-80 z-10"
+  >
     <div class="inline-flex items-center h-full w-8 mr-2 basis-12">
-      <UserAvatar />
+      <UserAvatar class="sm:hidden" />
     </div>
     <div class="flex-grow">
       <PageHeading />
     </div>
-  </div>
+  </header>
 </template>
